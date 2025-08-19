@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+body,div,span,p,h1{
+    margin: 0;
+    padding: 0;
+    --design-btn-color:#e7d7fc;
+    --text-design-span-color:#a44be9;
+}
+
+
+/*Card container styles*/
+
+.card__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 164px;
+}
+
+.content__container{
+    max-width: 368px;
+    border-radius: 16px 16px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 20px 16px;
+    box-shadow: 1px 1px 5px #0001;
+}
+
+/*image container styles*/
+
+.img__container{
+    max-width: 336px;
+    max-height: 152px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.img__container img{
+    border-radius: 15px;
+}
+
+/*span "design" styles*/
+
+.span__container{
+    max-width: fit-content;
+    background-color: var(--design-btn-color);
+    padding: 6px 16px 6px 16px;
+    text-align: center;
+    border-radius: 35px;
+    margin-bottom: 16px;
+}
+
+.span__container span{
+    color: var(--text-design-span-color);
+    font-size: 0.7rem;
+}
+
+/*h1*/
+
+h1{
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+.author{
+    padding-top: 20px;
+}
+
+/*DIVISORY LINE*/
+
+.card__container::before{
+    content: '';
+    width: 368px;
+    height: 1px;
+    background-color: #0002;
+    position: relative;
+    bottom: -340px;
+}
